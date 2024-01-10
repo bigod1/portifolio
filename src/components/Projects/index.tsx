@@ -7,7 +7,7 @@ import GitHubIcon from "../../assets/github-icon.png"
 export const Projects = () => {
     const linkedinProfile = () => {
         window.open(
-            "https://www.linkedin.com/in/luis-alberto-rocha-65169a257/"
+            "https://github.com/Kenzie-Academy-Brasil-Developers/desafio_fullstack_bigod1"
         );
     };
 
