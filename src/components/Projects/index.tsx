@@ -1,13 +1,12 @@
 import { ButtonBlue } from "../../styles/Buttons";
 import { StyledHeader_2, StyledHeader_3, StyledParagraph_1, StyledParagraph_2 } from "../../styles/typography";
-import { Container, DivProjects, DivTalkeWithMe, DivTecnologies, GitButton, ListItem, SpanTecnologies, StyledList } from "./style";
+import { CardButton, Container, DivButtons, DivProjects, DivTalkeWithMe, DivTecnologies, ListItem, SpanTecnologies, StyledList } from "./style";
 import GitHubIcon from "../../assets/github-icon.png"
-
 
 export const Projects = () => {
     const linkedinProfile = () => {
         window.open(
-            "https://github.com/Kenzie-Academy-Brasil-Developers/desafio_fullstack_bigod1"
+            "https://www.linkedin.com/in/luis-alberto-rocha-65169a257/"
         );
     };
 
@@ -57,10 +56,12 @@ export const Projects = () => {
 
                         <StyledParagraph_2>Essa é uma simples aplicação web simples com criação de contas, login, autenticação por JWT.</StyledParagraph_2>
 
-                        <GitButton onClick={projetoFullstack}>
-                            <img src={GitHubIcon} alt="" />
-                            <p>GitHub Code</p>
-                        </GitButton>
+                        <DivButtons>
+                            <CardButton onClick={projetoFullstack}>
+                                <img src={GitHubIcon} alt="" />
+                                <p>GitHub Code</p>
+                            </CardButton>
+                        </DivButtons>
                     </ListItem>
 
                     <ListItem>
@@ -72,10 +73,10 @@ export const Projects = () => {
 
                         <StyledParagraph_2>Nesse projeto utilizei python e django para criar um baco de dados com varias ligações entre suas tabelas.</StyledParagraph_2>
 
-                        <GitButton onClick={projetoPython}>
+                        <CardButton onClick={projetoPython}>
                             <img src={GitHubIcon} alt="" />
                             <p>GitHub Code</p>
-                        </GitButton>
+                        </CardButton>
                     </ListItem>
 
                     <ListItem>
@@ -87,10 +88,10 @@ export const Projects = () => {
 
                         <StyledParagraph_2>Para esse projeto utilizei typescript para criar um banco de dados para uma imobiliaria, onde as pessoas podem cadastrar imoveis, planejar horario de visitas e muito mais.</StyledParagraph_2>
 
-                        <GitButton onClick={kImoveis}>
+                        <CardButton onClick={kImoveis}>
                             <img src={GitHubIcon} alt="" />
                             <p>GitHub Code</p>
-                        </GitButton>
+                        </CardButton>
                     </ListItem>
                     
                 </StyledList>

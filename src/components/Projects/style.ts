@@ -53,7 +53,12 @@ export const SpanTecnologies = styled.span`
     align-items: center;
 `
 
-export const GitButton = styled.button`
+export const DivButtons = styled.div`
+    display: flex;
+    gap: 1rem;
+`
+
+export const CardButton = styled.button`
     display: flex;
     align-items: center;
     gap: 1rem;
