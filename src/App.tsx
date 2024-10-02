@@ -1,15 +1,9 @@
-import { RoutesMain } from "./routes"
-import GlobalStyle from "./styles/GlobalStyle"
 
-
-function App() {
-
-    return (
-        <>
-            <GlobalStyle />
-            <RoutesMain />
-        </>
-    )
+import { Outlet } from "react-router-dom";
+export default function App() {
+  return (
+    <div className="min-h-[100vh]">
+      <Outlet />
+    </div>
+  );
 }
-
-export default App
